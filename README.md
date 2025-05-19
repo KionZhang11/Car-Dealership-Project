@@ -32,3 +32,13 @@ The frontend is built in **React**, the main web layer is a **Django** app, data
 - MongoDB (or Docker)  
 - IBM Cloud account with Watson NLU credentials  
 - Docker & Docker Compose (for microservices)  
+
+## License
+
+This repository is a fork of [xrwvm-fullstack_developer_capstone](https://github.com/ibm-developer-skills-network/xrwvm-fullstack_developer_capstone) by IBM Developer Skills Network.  
+It is released under the Apache Version 2.0 License:
+
+> Copyright (c) 2024 IBM Developer Skills Network  
+> Copyright (c) 2025 Wei (Kion) Zhang
+
+See [LICENSE](./LICENSE) for details.
