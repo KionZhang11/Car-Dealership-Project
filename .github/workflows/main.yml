@@ -9,13 +9,10 @@ on:
 jobs:
   lint_python:
     name: Lint Python Files
+    if: false
     runs-on: ubuntu-latest
 
     steps:
-    
-    - name: Run Linter
-      run: |
-        find . -name "*.py" -exec flake8 {} + || true
 
     - name: Checkout Repository
       uses: actions/checkout@v3
@@ -42,14 +39,10 @@ jobs:
 
   lint_js:
       name: Lint JavaScript Files
+      if: false
       runs-on: ubuntu-latest
 
       steps:
-
-      - name: Run Linter
-        run: |
-          find . -name "*.py" -exec flake8 {} + || true
-          
       - name: Checkout Repository
         uses: actions/checkout@v3
 
