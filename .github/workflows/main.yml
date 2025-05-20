@@ -14,9 +14,8 @@ jobs:
     steps:
     
     - name: Run Linter
-      continue-on-error: true
       run: |
-        find . -name "*.py" -exec flake8 {} +
+        find . -name "*.py" -exec flake8 {} + || true
 
     - name: Checkout Repository
       uses: actions/checkout@v3
@@ -48,9 +47,8 @@ jobs:
       steps:
 
       - name: Run Linter
-        continue-on-error: true
         run: |
-          find ./server/database -name "*.js" -exec jshint {} +
+          find . -name "*.py" -exec flake8 {} + || true
           
       - name: Checkout Repository
         uses: actions/checkout@v3
